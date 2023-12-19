@@ -2,7 +2,7 @@
 
 <PageTitle>Weather forecast</PageTitle>
 
-@using BlazorTodoApp.Data
+@* @using BlazorTodoApp.Data
 @inject WeatherForecastService ForecastService
 
 <h1>Weather forecast</h1>
@@ -36,13 +36,13 @@ else
             }
         </tbody>
     </table>
-}
+} *@
 
 @code {
-    private WeatherForecast[]? forecasts;
+    // private WeatherForecast[]? forecasts;
 
-    protected override async Task OnInitializedAsync()
-    {
-        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
-    }
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    // }
 }
